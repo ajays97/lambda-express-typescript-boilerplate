@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "claudia-express-executor",
+    "name": "claudia-express",
+    "region": "ap-south-1"
+  },
+  "api": {
+    "id": "opvwwize69"
+  }
+}
