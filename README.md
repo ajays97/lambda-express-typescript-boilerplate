@@ -1,3 +1,7 @@
+## Why am I not using serverless framework?
+
+I don't need configuring my endpoints and all other awesome features that serverless offers since this is a proxy API, the reason we are using express is to create a proxy so that routes and other stuff are all defined and configured as part of the express application. Claudia is just about sufficient to get it done.
+
 # Running Express apps in AWS Lambda
 
 This is a simple example that shows how to deploy an existing [Express](http://expressjs.com/) application, with minimal changes, to AWS Lambda.
