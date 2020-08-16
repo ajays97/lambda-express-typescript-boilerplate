@@ -5,8 +5,9 @@
   "main": "lambda.js",
   "scripts": {
     "compile": "tsc",
-    "deploy": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-south-1",
-    "update": "claudia update",
+    "clean": "rimraf build",
+    "deploy": "tsc && claudia create --handler lambda.handler --deploy-proxy-api --region ap-south-1",
+    "update": "tsc && claudia update",
     "generate-proxy": "tsc && claudia generate-serverless-express-proxy --express-module build/app"
   },
   "license": "Apache-2.0",
@@ -20,6 +21,7 @@
     "@types/node": "^13.13.5",
     "aws-sdk": "^2.655.0",
     "claudia": "^5.12.0",
+    "rimraf": "^3.0.2",
     "typescript": "^3.8.3"
   }
 }
