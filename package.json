@@ -7,7 +7,7 @@
     "compile": "tsc",
     "deploy": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-south-1",
     "update": "claudia update",
-    "generate-proxy": "claudia generate-serverless-express-proxy --express-module build/app"
+    "generate-proxy": "tsc && claudia generate-serverless-express-proxy --express-module build/app"
   },
   "license": "Apache-2.0",
   "dependencies": {
