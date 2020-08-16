@@ -16,7 +16,7 @@ The third step will print out a URL you can use to access the express app.
 
 ## Updating the app (Everything is in sweet sweet TypeScript.)
 
-### Never change `module.exports = app` to something like `export default app`
+### Important: Never change `module.exports = app` to something like `export default app`
 
 1. Change [`app.ts`](src/app.ts)
 2. (Optionally) use `npm install <PACKAGE NAME> -S` to install additional dependencies (always save them to `package.json` using `-S`)
