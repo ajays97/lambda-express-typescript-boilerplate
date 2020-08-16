@@ -14,11 +14,14 @@ This is a simple example that shows how to deploy an existing [Express](http://e
 
 The third step will print out a URL you can use to access the express app.
 
-## Updating the app
+## Updating the app (Everything is in sweet sweet TypeScript.)
 
-1. Change [`app.js`](app.js)
+### Never change `module.exports = app` to something like `export default app`
+
+1. Change [`app.js`](app.ts)
 2. (Optionally) use `npm install <PACKAGE NAME> -S` to install additional dependencies (always save them to `package.json` using `-S`)
 3. Run `yarn update` to send the new version up to AWS. No need to generate the proxy again
+4. Note: The package name will be the name of the role created in your aws IAM. (e.g., claudia-express-executor in this boilerplate.)
 
 ## More information and limitations
 
