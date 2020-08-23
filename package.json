@@ -1,14 +1,11 @@
 {
-  "name": "claudia-express",
+  "name": "lambda-express-typescript-boilerplate",
   "version": "1.0.0",
   "description": "Example application for running a Node Express app on AWS Lambda using Amazon API Gateway.",
-  "main": "lambda.js",
+  "main": "app.js",
   "scripts": {
-    "compile": "tsc",
+    "build": "tsc",
     "clean": "rimraf build",
-    "deploy": "tsc && claudia create --handler lambda.handler --deploy-proxy-api --region ap-south-1",
-    "update": "tsc && claudia update",
-    "generate-proxy": "tsc && claudia generate-serverless-express-proxy --express-module build/app",
     "test": "jest",
     "lint": "npm run lint:js ",
     "lint:eslint": "eslint --ignore-path .gitignore --ext .ts",
