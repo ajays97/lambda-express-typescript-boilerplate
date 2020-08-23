@@ -1,6 +1,10 @@
 # package directories
 node_modules
 jspm_packages
+.webpack
 
 # build directories
 build
+
+# serverless framework directories
+.serverless
